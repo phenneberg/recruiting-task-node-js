@@ -18,7 +18,7 @@ const userController = express.Router({mergeParams: true});
 // ...
 
 
-// TODO: INSERT USER                (PUT http:${host}:${port}/user)
+// TODO: INSERT USER                (POST http:${host}:${port}/user)
 // ...
 
 
