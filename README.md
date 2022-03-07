@@ -33,6 +33,8 @@ npm run start
 The places where code has to be written by you are marked with `TODO` comments.
 
 You have to implement the business logic in the [middleware](./src/middleware/user.middleware.ts), which already contains the necessary function stubs and exports.
+<br>
+Note that in place of a real datasource like a database, this project simply uses a static array of users that you can directly manipulate from your code (which is empty on every restart).
 
 Secondly, you need to implement the [middleware](./src/controller/user.controller.ts), that defines the routes and calls the middleware functionality. It would be great if you also include some basic parameter validation using the express-validator library, which is already imported into the controller module.
 
