@@ -181,5 +181,11 @@ The routes to be implemented are as follows:
 
 <br>
 
+## Testing your code
+
+To test your code, you can use any tool of your choice that allows sending HTTP requests.
+
+If you use [Postman](https://www.postman.com/downloads/), you can import the [Request Collection](./postman/Remi%20Recruiting%20Task%20Node.js.postman_collection.json) contained in the project, where working sample requests for all routes are already contained.
+
 #
 # Good luck with the task!
