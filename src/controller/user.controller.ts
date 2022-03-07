@@ -1,6 +1,6 @@
 import * as express from 'express';
 import * as validator from 'express-validator';
-import * as userMiddleware from '../middleware/user.middleware';
+
 
 const userController = express.Router({mergeParams: true});
 
@@ -10,31 +10,20 @@ const userController = express.Router({mergeParams: true});
  */
 
 
-// ..........
-userController.get(
-    '/',
-    userMiddleware.getAllUsers
-);
+// TODO: GET ALL USERS              (GET http:${host}:${port}/user)
+// ...
 
-userController.get(
-    '/:email',
-    validator.param('email').isEmail(),
-    userMiddleware.getUserByEmail
-);
 
-userController.put(
-    '/',
-    validator.body('email').isEmail(),
-    validator.body('firstName').isString().isLength({ min: 1 }),
-    validator.body('lastName').isString().isLength({ min: 1 }),
-    userMiddleware.insertUser
-);
+// TODO: GET USER BY EMAIL          (GET http:${host}:${port}/user/${email})
+// ...
 
-userController.delete(
-    '/:email',
-    validator.param('email').isEmail(),
-    userMiddleware.deleteUserByEmail
-);
+
+// TODO: INSERT USER                (PUT http:${host}:${port}/user)
+// ...
+
+
+// TODO: DELETE USER BY EMAIL       (DELETE http:${host}:${port}/user/${email})
+// ...
 
 
 /**

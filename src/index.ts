@@ -1,6 +1,5 @@
 import dotenv from 'dotenv';
 import ExpressApp, * as express from 'express';
-import { userController } from './controller/user.controller';
 
 
 // load environment variables from config
@@ -21,14 +20,11 @@ app.use(express.json());
 
 
 /**
- * TODO: INTEGRATE CONTROLLERS
+ * TODO: INTEGRATE CONTROLLER
  */
 
 
-// ..........
-app.use('/user',
-    userController
-);
+// TODO: INTEGRATE USER CONTROLLER              (http:${host}:${port}/user)
 
 
 /**
