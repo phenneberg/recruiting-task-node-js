@@ -22,7 +22,7 @@ userController.get(
     userMiddleware.getUserByEmail
 );
 
-userController.put(
+userController.post(
     '/',
     validator.body('email').isEmail(),
     validator.body('firstName').isString().isLength({ min: 1 }),

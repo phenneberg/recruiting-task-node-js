@@ -38,7 +38,7 @@ function insertUser(req: express.Request, res: express.Response, next: express.N
 
     USER_DATA.push(user);
 
-    res.sendStatus(200);
+    res.sendStatus(201);
 }
 
 function deleteUserByEmail(req: express.Request, res: express.Response, next: express.NextFunction) {
